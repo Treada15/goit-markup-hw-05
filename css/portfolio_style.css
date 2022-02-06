@@ -126,7 +126,7 @@ height: auto;
   background-color: var(--second-button-color);
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
 }
 
 .header-icon-icon {
@@ -170,6 +170,7 @@ height: auto;
   
 }
 .hero-button-item {
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -182,8 +183,8 @@ height: auto;
   border-radius: 4px;
   color: var(--header-text-color);
   background-color: #f5f4fa;
-  border: 1px solid #f5f4fa;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  border: transparent;
+  
 }
 
 .hero-list-item {
@@ -199,6 +200,9 @@ margin-left: 0px;
 .hero-button-item:focus {
   background-color: var(--second-button-color);
   color: var(--first-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hero-icon {
@@ -249,7 +253,8 @@ display: block;
 }
   .about-item-wrap{
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
+     
   }
 .about-box{
   padding: 20px 24px;
@@ -274,15 +279,10 @@ display: block;
     overflow: auto;
   }
 
-.about-item:hover .about-text {
+.about-item:hover .about-text, 
+.about-item:focus .about-text {
  transform: translateY(0);
   }
-.about-item-box:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-.about-item-box:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .about-item:nth-child(3n + 3) {
   margin-right: 0px;
